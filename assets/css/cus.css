@@ -1,0 +1,59 @@
+.aside {
+  width: 20rem;
+}
+
+.main {
+  width: 100%;
+}
+
+.list-group-item {
+  border-color: transparent !important;
+  border-left-width: 4px !important;
+}
+
+.list-group-item.active {
+  color: #007bff !important;
+  background-color: transparent !important;
+  border-style: solid !important;
+  border-left: 4px solid #007bff !important;
+}
+
+.__card-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.line_chart {
+  height: 15rem !important;
+}
+
+.visitor_chart {
+  height: 16.5rem !important;
+}
+
+@media screen and (max-width: 768px) {
+  .aside {
+    z-index: 1041;
+    position: fixed;
+    top: 0 !important;
+    left: -100%;
+    transition: 0.5s;
+  }
+
+  .main {
+    height: 100vh;
+    overflow: scroll;
+  }
+
+  .aside.show {
+    left: 0;
+    padding: 0 !important;
+    background: #fff !important;
+  }
+
+  .aside-body {
+    position: relative !important;
+    height: 100vh;
+    background: #fff !important;
+  }
+}
